@@ -1,0 +1,161 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img {
+	border: none;
+}
+
+
+/* CSS Reset End */
+
+body {
+  background-color: #F7E4D4;
+
+}
+
+div#root {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  height: 50vh;
+}
+
+form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+
+  font-family: 'EB Garamond', serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: #467745;
+}
+
+input[type=text] {
+	width: 480px;
+	height: 64px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  background-color: white;
+  border: 1px solid white;
+	
+  font-family: 'Montserrat', sans-serif;
+	font-weight: medium;
+  font-size: 16px;
+	color: #467745;
+}
+
+::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+	color: #467745;
+	opacity: 0.7;
+}
+
+textarea {
+  width: 480px;
+	height: 120px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: white;
+  border: 1px solid white;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+	color: #467745;
+	opacity: 0.7;
+}
+
+.gdpr {
+  display: table-row;
+  text-align: left;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  display: table-cell;
+	vertical-align: middle;
+  border: none;
+}
+
+label {
+  padding-left: 20px;
+  display: table-cell;
+	vertical-align: middle;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+  color: #467745;
+}
+
+button {
+	width: 280px;
+	height: 80px;
+	margin-top: 40px;
+
+	background-color: #467745;
+  border: 1px solid #467745;
+	border-radius: 100px;
+
+  font-family: 'EB Garamond', serif;
+	font-size: 21px;
+	letter-spacing: 0.2em;
+	color: #F7E4D4;
+}
+
+@media screen and (max-width: 520px) {
+
+  h1 {
+		font-size: 36px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+	}
+
+  input[type=text] {
+    width: calc(100vw - 40px);
+    margin: 20px;
+  }
+
+  textarea {
+    width: calc(100vw - 40px);
+    margin: 20px;
+  }
+
+  input[type="checkbox"] {
+    margin-left: 20px;
+  }
+
+}
+
+
